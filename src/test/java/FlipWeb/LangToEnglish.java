@@ -20,6 +20,7 @@ public class LangToEnglish extends Config {
         if (PageObject.Init_PageObject().EngisDisplayed()){
             PageObject.Init_PageObject().clickEng();
         }
+        Thread.sleep(3000);
         Assert.assertEquals(PageObject.Init_PageObject().englishPage(),"Hello there!");
 
         Thread.sleep(3000);
