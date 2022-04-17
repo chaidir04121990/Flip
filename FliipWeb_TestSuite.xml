@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite Flip Web" >
+    <test name="Feature" >
+        <classes>
+            <class name="FlipWeb.LangToEnglish" />
+            <class name="FlipWeb.eWallet"></class>
+            <class name="FlipWeb.Daftar"></class>
+        </classes>
+    </test>
+</suite>
