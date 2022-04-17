@@ -48,11 +48,27 @@ public class PageObject extends Config{
     @FindBy(xpath = "//div[@class=\"modal-body \"]/p")
     WebElement TextBody;
 
+    @FindBy(xpath = "//div[@class=\"sc-ugnQR hSUHca p-0\"]/button[text()=\"Daftar Flip Sekarang\"]")
+    public WebElement BTN_daftar;
+
+    public String Signup_Page = "https://flip.id/signup";
+
 
     public static PageObject Init_PageObject(){
         PageObject po = new PageObject();
         PageFactory.initElements(driver,po);
         return po;
+    }
+
+    public void clickBTN(WebElement el){
+        el.click();
+        System.out.println("Button "+el+" is being clicked!!");
+    }
+
+    public void SignUP_Page() throws InterruptedException {
+        Thread.sleep(4000);
+        String currentURL=driver.getCurrentUrl();
+        Assert.assertEquals(currentURL,Signup_Page);
     }
 
     public boolean landingPage(){
