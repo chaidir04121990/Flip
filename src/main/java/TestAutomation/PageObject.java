@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class PageObject extends Config{
+    //
     @FindBy(xpath = "//button[text()=\"Masuk\"]")
     WebElement BTNlogin;
 
