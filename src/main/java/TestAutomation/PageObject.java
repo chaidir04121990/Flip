@@ -7,7 +7,7 @@ import org.testng.Assert;
 
 public class PageObject extends Config{
     ////fjdkalfja;fja;dfkja
-    //perubahankjlkjldfjdlfjaldfja
+    //perubahankjlkjldfjdlfjaldfjadsfadsfafadfad
     @FindBy(xpath = "//button[text()=\"Masuk\"]")
     WebElement BTNlogin;
 
