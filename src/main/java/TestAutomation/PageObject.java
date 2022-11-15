@@ -10,6 +10,7 @@ public class PageObject extends Config{
     //perubahankjlkjldf
     //klajfldajflajdf
     //update
+    //updatebaru
     @FindBy(xpath = "//button[text()=\"Masuk\"]")
     WebElement BTNlogin;
 
